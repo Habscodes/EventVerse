@@ -1,0 +1,16 @@
+[package]
+name = "event-verse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-primitives = "0.3"
+alloy-sol-types = "0.3"
+stylus-sdk = "0.4"
+wee_alloc = "0.4"
+
+[features]
+export-abi = ["stylus-sdk/export-abi"]
+
+[lib]
+crate-type = ["lib", "cdylib"]
